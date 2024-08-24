@@ -1,11 +1,18 @@
 import Image from "next/image";
+import Navbar from "./components/navigation/navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p>TEST</p>
+    <>
+      <div className="container mx-auto px-4">
+        <h1>Hello word</h1>
+        <p>This is a content to make our page longer</p>
+        <div className="w-full h-screen bg-green-300"></div>
+        <p>
+          Lorem Ipsum is simply dummy text ...
+        </p>
       </div>
-    </main>
+    </>
   );
 }
+
