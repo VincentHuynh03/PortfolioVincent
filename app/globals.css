@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* light grey bg
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 51, 67, 89; /* Updated start color */
+  --background-end-rgb: 51, 67, 89;   /* Updated end color for a solid background */
 }
 
+/*
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,9 +19,14 @@
   }
 }
 */
+#profile{
+  background-color:rgb(51,67,89);
+}
 
 body {
+  background-color: rgb(var(--background-start-rgb));
   color: rgb(var(--foreground-rgb));
+  height: 100vh; 
 }
 
 @layer utilities {

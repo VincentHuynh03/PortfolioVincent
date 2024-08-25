@@ -5,33 +5,33 @@ import Button from "./button";
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
     <>
-      <div className="w-full h-20 bg-sky-400 top-0">
+      <div className="w-full h-20 bg-gray-800 top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between gap-x-6 items-center h-full">
         <Button></Button>
         <div className="flex-1 flex justify-center">
             <ul className="hidden md:flex gap-x-2 text-white">
-            <li className="hover:underline px-6 py-3 font-semibold text-sm hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+            <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-300 hover:bg-blue-800  rounded-full shadow-lg hover:border-2 border-blue-400 ">
                 <Link href="/about">
                   <p>Profile</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
               <Link href="/services">
                   <p>Education</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm hover:bg-blue-500 rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400 hover:bg-blue-500 rounded-full shadow-lg hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Skills</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-500 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Projects</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-600 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Contacts</p>
                 </Link>
