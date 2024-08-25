@@ -11,27 +11,22 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         <Button></Button>
         <div className="flex-1 flex justify-center">
             <ul className="hidden md:flex gap-x-2 text-white">
-            <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-300 hover:bg-blue-800  rounded-full shadow-lg hover:border-2 border-blue-400 ">
-                <Link href="/about">
-                  <p>Profile</p>
-                </Link>
-              </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400  rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/services">
                   <p>Education</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400 hover:bg-blue-500 rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-500 rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Skills</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-500 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-600 rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Projects</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-600 hover:bg-blue-500  rounded-full shadow-lg hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-700  rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Contacts</p>
                 </Link>

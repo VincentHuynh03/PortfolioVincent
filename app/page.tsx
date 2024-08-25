@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Navbar from "./components/navigation/navbar";
 import Profile from "./components/profile";
+import Education from "./components/education";
 
 export default function Home() {
   return (
     <>
         <Profile></Profile>
+        <Education></Education>
                 {/* 
 
         <h1>Hello word</h1>
