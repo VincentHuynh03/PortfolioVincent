@@ -23,10 +23,22 @@
   background-color:rgb(51,67,89);
 }
 
-#education{
-  background-color:rgb(112,123,138);
+#container{
+  padding: 0 90px;
 }
 
+
+/* global.css */
+.section-heading {
+  position: relative;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ignore-padding {
+    margin-left: -80px; /* Adjust negative margin for mobile */
+  }
+}
 /*
 body {
   background-color: rgb(var(--background-start-rgb));
