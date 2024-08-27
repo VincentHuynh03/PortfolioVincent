@@ -32,11 +32,14 @@
 .section-heading {
   position: relative;
   font-weight: 600;
+  padding: 0 90px;
+  
 }
 
 @media (max-width: 768px) {
   .ignore-padding {
-    margin-left: -80px; /* Adjust negative margin for mobile */
+    margin-left: -50px; /* Adjust negative margin for mobile */
+    width: 100%;
   }
 }
 /*

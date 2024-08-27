@@ -12,7 +12,7 @@ const Sidebar = ({
     
     <>
       <div
-        className="block md:hidden sidebar-container absolute w-full h-50 overflow-hidden justify-center bg-sky-400 grid pt-[30px] left-0 z-10 "
+        className="block md:hidden sidebar-container absolute w-full h-50 overflow-hidden justify-center bg-sky-400 grid pt-[30px] left-0 z-10 " id="profile"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: `${isOpen ? "65px" : "-100%"}`, // Adjust the value as needed
