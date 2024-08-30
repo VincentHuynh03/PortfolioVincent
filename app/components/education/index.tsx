@@ -13,9 +13,9 @@ const Education = () => {
             <Section title="Education" />
 
         
-            <div className="flex-row w-full flex-1 border-2 flex-wrap order-white mb-5 rounded-xl px-2 py-6 drop-shadow-lg">
+            <div className="custom-translate flex-row md:w-5/12 flex-1 border-2 flex-wrap order-white mb-4 rounded-xl px-4 py-4 drop-shadow-lg">
                 
-                <div className="flex flex-wrap text-center items-center gap-4">
+            <div className="flex items-center justify-center flex-wrap md:items-start md:justify-start gap-4 mb-4 md:mb-0">
             <Image
                 src="/rosemont.jpg"
                 height={100}
@@ -27,8 +27,10 @@ const Education = () => {
 
             <div className="text-center">
                 <p>Collège de Rosemont</p>
-                <p>Collège de Rosemont</p>
-                <p>Collège de Rosemont</p>
+                <p>DEC:</p>
+                <p>
+                Application development: Web and mobile</p>
+                <p>2020-2024</p>
             </div>
 
 
