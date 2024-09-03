@@ -23,9 +23,23 @@
   background-color:rgb(51,67,89);
 }
 
+#skills{
+  background-color:rgb(51,67,89);
+}
+
 #container{
   padding: 0 90px;
 }
+
+
+@media (min-width: 1025px) {
+  .custom-translate-skills {
+    transform: translate(30px, -60px);
+  }
+}
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
