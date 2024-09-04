@@ -38,6 +38,8 @@
   }
 }
 
+
+/*ipad*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .custom-translate {
@@ -58,33 +60,83 @@
   
 }
 
+.section-heading-skills {
+  margin-left: 2.7rem;
+}
+
+.section-heading-skills::after {
+  margin-left: -2.7rem;
+}
+
+
+
 @media (max-width: 768px) {
   .ignore-padding {
     margin-left: -50px; 
     width: 100%;
   }
+  .section-heading-skills {
+    margin-left: 1rem;
+  }
+}
+
+
+
+
+
+
+
+.gradient-box {
+  border: double 3px transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(rgb(51,67,89), rgb(51,67,89)); /* Common background */
 }
 
 .gradient-box-js {
-  border: double 3px transparent;
-  background-image: linear-gradient(rgb(51,67,89), rgb(51,67,89)), radial-gradient(circle at top, rgb(247, 247, 72),#334359);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(245, 241, 39) 99%), radial-gradient(circle at top, rgb(247, 247, 72), #334359);
 }
 
 .gradient-box-java {
-  border: double 3px transparent;
-  background-image: linear-gradient(rgb(51,67,89), rgb(51,67,89)), radial-gradient(circle at top, rgb(247, 81, 59),#334359);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(247, 81, 59) 99%), radial-gradient(circle at top, rgb(247, 81, 59),#334359);
 }
 
 
+.gradient-box-python {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(69, 132, 182) 99%), radial-gradient(circle at top, rgb(69, 132, 182),#334359);
+}
 
+.gradient-box-kotlin {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(214, 123, 226) 99%), radial-gradient(circle at top, rgb(214, 123, 226),#334359);
+}
 
+.gradient-box-csharp {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(198, 52, 218) 99%), radial-gradient(circle at top, rgb(198, 52, 218),#334359);
+}
 
+.gradient-box-SQL {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(135, 189, 240) 99%), radial-gradient(circle at top, rgb(135, 189, 240),#334359);
+}
+.gradient-box-angular {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(255, 13, 13) 99%), radial-gradient(circle at top, rgb(255, 13, 13),#334359);
+}
 
+.gradient-box-nextjs {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(0, 0, 0) 99%), radial-gradient(circle at top, rgb(0, 0, 0),#334359);
+}
 
+.gradient-box-tailwind {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(28, 199, 230) 99%), radial-gradient(circle at top, rgb(28, 199, 230),#334359);
+}
+.gradient-box-typescript {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(49, 120, 198) 99%), radial-gradient(circle at top, rgb(49, 120, 198),#334359);
+}
+.gradient-box-bootstrap {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(113, 26, 153) 99%), radial-gradient(circle at top, rgb(113, 26, 153),#334359);
+}
+.gradient-box-vuetify {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(134, 184, 238) 99%), radial-gradient(circle at top, rgb(134, 184, 238),#334359);
+}
 /*
 body {
   background-color: rgb(var(--background-start-rgb));

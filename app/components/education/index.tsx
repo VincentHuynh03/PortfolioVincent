@@ -6,7 +6,7 @@ import Section from "../elements/section";
 
 const Education = () => {
     return (
-        <div className="h-full flex w-full text-white text-wrap bg-gray-800">
+        <div className="h-full flex w-full text-white text-wrap bg-gray-800" id="education">
 
             <div className="items-center sm:items-start container w-full flex-col flex mx-auto px-4  m-4 h-full">
 

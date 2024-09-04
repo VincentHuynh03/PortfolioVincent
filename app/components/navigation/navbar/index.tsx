@@ -12,12 +12,12 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         <div className="flex-1 flex justify-center">
             <ul className="hidden md:flex gap-x-2 text-white">
               <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-400  rounded-full shadow-xl hover:border-2 border-blue-400 ">
-              <Link href="/services">
+              <Link href="#education">
                   <p>Education</p>
                 </Link>
               </li>
               <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-500 rounded-full shadow-xl hover:border-2 border-blue-400 ">
-              <Link href="/contacts">
+              <Link href="#skills">
                   <p>Skills</p>
                 </Link>
               </li>
