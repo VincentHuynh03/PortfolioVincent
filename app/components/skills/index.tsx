@@ -14,8 +14,8 @@ const Skills = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:p-20 flex">
 
-            <Skills_Card title="JavaScript" image="/js.png" />
-            <Skills_Card title="JavaScript" image="/js.png" />
+            <Skills_Card title="JavaScript" image="/js.png" className="shadow-yellow-400/40 gradient-box-js" />
+            <Skills_Card title="Java" image="/javas.png" className="shadow-red-400/40 gradient-box-java"/>
             <Skills_Card title="JavaScript" image="/js.png" />
             <Skills_Card title="JavaScript" image="/js.png" />
             <Skills_Card title="JavaScript" image="/js.png" />

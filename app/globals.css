@@ -38,9 +38,6 @@
   }
 }
 
-
-
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .custom-translate {
@@ -67,6 +64,27 @@
     width: 100%;
   }
 }
+
+.gradient-box-js {
+  border: double 3px transparent;
+  background-image: linear-gradient(rgb(51,67,89), rgb(51,67,89)), radial-gradient(circle at top, rgb(247, 247, 72),#334359);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.gradient-box-java {
+  border: double 3px transparent;
+  background-image: linear-gradient(rgb(51,67,89), rgb(51,67,89)), radial-gradient(circle at top, rgb(247, 81, 59),#334359);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+
+
+
+
+
 /*
 body {
   background-color: rgb(var(--background-start-rgb));
