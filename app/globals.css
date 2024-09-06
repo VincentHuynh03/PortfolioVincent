@@ -18,7 +18,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-*/
+
 #profile{
   background-color:rgb(51,67,89);
 }
@@ -26,7 +26,7 @@
 #skills{
   background-color:rgb(51,67,89);
 }
-
+*/
 #container{
   padding: 0 90px;
 }
@@ -44,12 +44,14 @@
        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .custom-translate {
     transform: translateX(200px);
+    background-color:rgb(51,67,89);
   }
 }
 
 @media (min-width: 1025px) {
   .custom-translate {
     transform: translateX(420px);
+    background-color:rgb(51,67,89);
   }
 }
 
@@ -83,9 +85,9 @@
 
 
 .education-card{
-  background-color: #435670;
-}
-
+  background-color:rgb(51,67,89);}
+.experience-card{
+  background-color:rgb(51,67,89);}
 
 
 .gradient-box {

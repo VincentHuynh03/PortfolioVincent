@@ -8,10 +8,12 @@ import Experience from "./components/experience";
 export default function Home() {
   return (
     <>
+    <div className="bg-gray-800">
         <Profile></Profile>
         <Education></Education>
         <Skills></Skills>
         <Experience></Experience>
+        </div>
                 {/* 
 
         <h1>Hello word</h1>

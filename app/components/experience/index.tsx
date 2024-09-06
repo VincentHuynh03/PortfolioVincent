@@ -12,8 +12,9 @@ const Experience = () => {
 
             <Section title="Experience" />
 
-            <Experience_card title="Lalema Inc." image="/logo_lalema.svg" className="" />
-
+            <div className="flex flex-row m-auto space-x-4">
+                    <Experience_card title="Web developer Intern"  position="Lalema Inc." image="/logo_lalema.svg" year="April 2024 - June 2024" />
+                </div>
             </div>
         </div>
     );

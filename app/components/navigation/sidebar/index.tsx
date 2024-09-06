@@ -12,7 +12,7 @@ const Sidebar = ({
     
     <>
       <div
-        className="block md:hidden sidebar-container absolute w-full h-50 overflow-hidden justify-center bg-sky-400 grid pt-[30px] left-0 z-10 " id="profile"
+        className="block md:hidden sidebar-container absolute w-full h-50 overflow-hidden justify-center bg-gray-800 grid pt-[30px] left-0 z-10 " id="profile"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: `${isOpen ? "65px" : "-100%"}`, // Adjust the value as needed
@@ -22,11 +22,6 @@ const Sidebar = ({
         </div>
         
         <ul className="sidebar-nav text-center leading-relaxed text-white text-xl">
-        <li>
-                <Link href="#profile">
-                  <p>Profile</p>
-                </Link>
-              </li>
               <li>
                 <Link href="#education">
                   <p>Education</p>
@@ -38,7 +33,7 @@ const Sidebar = ({
                 </Link>
               </li>
               <li>
-                <Link href="/contacts">
+                <Link href="#experience">
                   <p>Experience</p>
                 </Link>
               </li>
