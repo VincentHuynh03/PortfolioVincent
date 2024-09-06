@@ -3,6 +3,7 @@ import Navbar from "./components/navigation/navbar";
 import Profile from "./components/profile";
 import Education from "./components/education";
 import Skills from "./components/skills";
+import Experience from "./components/experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Profile></Profile>
         <Education></Education>
         <Skills></Skills>
+        <Experience></Experience>
                 {/* 
 
         <h1>Hello word</h1>

@@ -23,10 +23,15 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               </li>
               <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-600 rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/contacts">
+                  <p>Experience</p>
+                </Link>
+              </li>
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-700 rounded-full shadow-xl hover:border-2 border-blue-400 ">
+              <Link href="/contacts">
                   <p>Projects</p>
                 </Link>
               </li>
-              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-700  rounded-full shadow-xl hover:border-2 border-blue-400 ">
+              <li className="hover:underline px-6 py-3 font-semibold text-sm  bg-blue-800  rounded-full shadow-xl hover:border-2 border-blue-400 ">
               <Link href="/contacts">
                   <p>Contacts</p>
                 </Link>

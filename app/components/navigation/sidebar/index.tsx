@@ -23,18 +23,23 @@ const Sidebar = ({
         
         <ul className="sidebar-nav text-center leading-relaxed text-white text-xl">
         <li>
-                <Link href="/about">
+                <Link href="#profile">
                   <p>Profile</p>
                 </Link>
               </li>
               <li>
-                <Link href="/services">
+                <Link href="#education">
                   <p>Education</p>
                 </Link>
               </li>
               <li>
-                <Link href="/contacts">
+                <Link href="#skills">
                   <p>Skills</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacts">
+                  <p>Experience</p>
                 </Link>
               </li>
               <li>

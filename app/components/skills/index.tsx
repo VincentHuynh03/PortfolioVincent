@@ -12,7 +12,7 @@ const Skills = () => {
 
             <Section title="Skills" className="section-heading-skills" />
 
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-y-14 md:px-30 md:gap-x-40 md:py-5 flex items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 md:gap-y-14 md:px-30 md:gap-x-40 md:py-5 flex items-center">
 
             <Skills_Card title="JavaScript" image="/js.png" className="text-2xl shadow-yellow-400/40 gradient-box gradient-box-js" />
             <Skills_Card title="Java" image="/javas.png" className="text-2xl shadow-red-400/40 gradient-box gradient-box-java"/>
@@ -25,6 +25,7 @@ const Skills = () => {
             <Skills_Card title="Tailwind CSS" image="/tailwind.png" className="text-2xl shadow-cyan-400/40 gradient-box gradient-box-tailwind"/>
             <Skills_Card title="TypeScript" image="/typescript.png" className="text-2xl shadow-blue-400/40 gradient-box gradient-box-typescript"/>
             <Skills_Card title="Bootstrap" image="/bootstrap.png" className="text-2xl shadow-indigo-500/40 gradient-box gradient-box-bootstrap"/>
+            <Skills_Card title="Git" image="/git.png" className="text-2xl shadow-orange-500/40 gradient-box gradient-box-git"/>
 
             </div>
 

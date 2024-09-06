@@ -13,7 +13,7 @@ const Education = () => {
             <Section title="Education" />
 
         
-            <div className="custom-translate flex-row md:w-5/12 flex-1 border-2 flex-wrap order-white mb-4 rounded-xl px-4 py-4 drop-shadow-lg">
+            <div className="custom-translate flex-row md:w-5/12 flex-1 border-2 flex-wrap mb-4 rounded-xl px-4 py-4 drop-shadow-lg">
                 
             <div className="flex items-center justify-center flex-wrap md:items-start md:justify-start gap-4 mb-4 md:mb-0">
             <Image

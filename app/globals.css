@@ -82,7 +82,9 @@
 
 
 
-
+.education-card{
+  background-color: #435670;
+}
 
 
 
@@ -136,6 +138,9 @@
 }
 .gradient-box-vuetify {
   background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(134, 184, 238) 99%), radial-gradient(circle at top, rgb(134, 184, 238),#334359);
+}
+.gradient-box-git {
+  background-image: linear-gradient(30deg, rgb(51,67,89) 45%, rgb(241,78,50) 99%), radial-gradient(circle at top, rgb(241,78,50),#334359);
 }
 /*
 body {
