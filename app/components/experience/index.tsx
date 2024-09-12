@@ -10,7 +10,7 @@ const Experience = () => {
 
             <div className="items-center sm:items-start container w-full flex-col flex mx-auto px-4  m-4 h-full">
 
-            <Section title="Experience" />
+            <Section title="Experience" className="section-heading-experience"/>
 
             <div className="flex flex-row m-auto space-x-4">
                     <Experience_card title="Web developer Intern"  position="Lalema Inc." image="/logo_lalema.svg" year="April 2024 - June 2024" />

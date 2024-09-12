@@ -46,6 +46,11 @@ const Experience_card = ({ title, year, position, image, className }: Experience
 
 
 </ul>
+
+  <span className="font-bold">Website:<br></br></span>
+  <a target="_blank" href="https://visionhs.ca/" rel="noopener noreferrer" className="underline cursor-pointer text-blue-400 text-xl">VisionHS
+ </a>
+
     </div>
 
 

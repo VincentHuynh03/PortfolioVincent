@@ -31,7 +31,6 @@
   padding: 0 90px;
 }
 
-
 @media (min-width: 1025px) {
   .custom-translate-skills {
     transform: translate(30px, -60px);
@@ -62,14 +61,34 @@
   
 }
 
+.section-heading-education {
+  margin-left: 1.2rem;
+}
+
+.section-heading-education::after {
+  margin-left: -1.2rem;
+}
 .section-heading-skills {
   margin-left: 2.7rem;
 }
 
 .section-heading-skills::after {
-  margin-left: -2.7rem;
+  margin-left: -3.2rem;
+}
+.section-heading-experience {
+  margin-left: 2.7rem;
 }
 
+.section-heading-experience::after {
+  margin-left: -0.8rem;
+}
+.section-heading-projects {
+  margin-left: 2.3rem;
+}
+
+.section-heading-projects::after {
+  margin-left: -2.3rem;
+}
 
 
 @media (max-width: 768px) {

@@ -10,7 +10,7 @@ const Education = () => {
 
             <div className="sm:items-start container w-full flex-col flex mx-auto px-4 m-4 h-full">
 
-            <Section title="Education" />
+            <Section title="Education" className="section-heading-education" />
 
         
             <div className="bg-[rgb(51,67,89)] m-auto flex-row md:w-5/12 flex-1 border-2 border-red-500 flex-wrap mb-4 rounded-xl px-4 py-4 drop-shadow-lg">
