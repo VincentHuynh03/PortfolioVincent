@@ -5,17 +5,19 @@ import Education from "./components/education";
 import Skills from "./components/skills";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
-
+import ContactForm from "./components/contacts";
 
 export default function Home() {
   return (
     <>
+    <title>Vincent Huynh - Portfolio</title>
     <div className="bg-gray-800">
         <Profile></Profile>
         <Education></Education>
         <Skills></Skills>
         <Experience></Experience>
         <Projects></Projects>
+        <ContactForm></ContactForm>
         </div>
                 {/* 
 

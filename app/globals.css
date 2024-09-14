@@ -90,6 +90,13 @@
   margin-left: -2.3rem;
 }
 
+.section-heading-contacts {
+  margin-left: 2.3rem;
+}
+
+.section-heading-contacts::after {
+  margin-left: -1.6rem;
+}
 
 @media (max-width: 768px) {
   .ignore-padding {
