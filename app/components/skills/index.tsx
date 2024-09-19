@@ -14,7 +14,7 @@ const Skills = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 md:gap-y-14 md:px-30 md:gap-x-40 md:py-5 flex items-center">
 
-            <Skills_Card title="JavaScript" image="/js.png" className="text-2xl shadow-yellow-400/40 gradient-box gradient-box-js" />
+            <Skills_Card title="JavaScript" image="/javascript.png" className="text-2xl shadow-yellow-400/40 gradient-box gradient-box-js" />
             <Skills_Card title="Java" image="/javas.png" className="text-2xl shadow-red-400/40 gradient-box gradient-box-java"/>
             <Skills_Card title="Python" image="/python.png" className="text-2xl shadow-blue-500/40 gradient-box gradient-box-python"/>
             <Skills_Card title="Kotlin" image="/kotlin.png" className="text-2xl shadow-purple-400/40 gradient-box gradient-box-kotlin"/>
