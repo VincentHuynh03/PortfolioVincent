@@ -7,14 +7,13 @@ import { useTranslation } from 'next-i18next';
 import { useRouter } from "next/router";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
-  const { t } = useTranslation();
   return (
     <div className="w-full h-20 bg-gray-800 top-0">
       <div className="container mx-auto px-4 h-full">
         <div className="flex justify-between gap-x-6 items-center h-full">
           <div className="flex-1 flex justify-center">
           <ul className="hidden md:flex gap-x-2 text-white">
-          {[t('education'), "Skills", "Experience", "Projects", "Contacts"].map((item, index) => {
+          {["Education", "Skills", "Experience", "Projects", "Contacts"].map((item, index) => {
             const colors = ["bg-blue-400", "bg-blue-500", "bg-blue-600", "bg-blue-700","bg-blue-800", ];
             return (
               <motion.li
