@@ -1,4 +1,3 @@
-import Button from '../navbar/button';
 import Link from "next/link";
 
 const Sidebar = ({
@@ -18,8 +17,6 @@ const Sidebar = ({
           top: `${isOpen ? "65px" : "-100%"}`, // Adjust the value as needed
         }}
       >
-        <div className="absolute left-0 p-6">
-        </div>
         
         <ul className="sidebar-nav text-center leading-relaxed text-white text-xl">
               <li>
