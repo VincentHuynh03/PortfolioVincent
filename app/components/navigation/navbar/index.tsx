@@ -11,19 +11,22 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         <div className="flex justify-between gap-x-6 items-center h-full">
           <Button />
           <div className="flex-1 flex justify-center">
-            <ul className="hidden md:flex gap-x-2 text-white">
-              {["Education", "Skills", "Experience", "Projects", "Contacts"].map((item, index) => (
-                <motion.li
-                  key={index}
-                  whileHover={{ scale: 1.1 }}
-                  className={`hover:underline px-6 py-3 font-semibold text-sm bg-blue-${400 + index * 100} rounded-full shadow-xl  border-blue-400`}
-                >
-                  <Link href={`#${item.toLowerCase()}`}>
-                    <p>{item}</p>
-                  </Link>
-                </motion.li>
-              ))}
-            </ul>
+          <ul className="hidden md:flex gap-x-2 text-white">
+          {["Education", "Skills", "Experience", "Projects", "Contacts"].map((item, index) => {
+            const colors = ["bg-blue-400", "bg-blue-500", "bg-blue-600", "bg-blue-700","bg-blue-800", ];
+            return (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.1 }}
+                className={`hover:underline px-6 py-3 font-semibold text-sm ${colors[index]} rounded-full shadow-xl border-blue-400`}
+              >
+                <Link href={`#${item.toLowerCase()}`}>
+                  <p>{item}</p>
+                </Link>
+              </motion.li>
+            );
+          })}
+        </ul>
             
             <div className="block md:hidden text-white text-lg">      
               <p>Vincent Huynh</p>
