@@ -38,12 +38,12 @@ const Sidebar = ({
                 </Link>
               </li>
               <li>
-                <Link href="/contacts">
+                <Link href="#projects">
                   <p>Projects</p>
                 </Link>
               </li>
               <li>
-                <Link href="/contacts">
+                <Link href="#contacts">
                   <p>Contacts</p>
                 </Link>
               </li>

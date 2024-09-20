@@ -14,7 +14,7 @@ export interface ExperienceTitle {
 
 const Experience_card = ({ title, year, position, image, className }: ExperienceTitle) => {
   return (
-    <div className={`m-auto min-h-[14rem] md:w-[25rem] flex-1 mb-4 px-4 py-4 drop-shadow-lg border-2 rounded-xl experience-card ${className || ''}`}>
+    <div className={`m-auto min-h-[14rem] md:w-[25rem] flex-1 mb-4 px-4 py-4 drop-shadow-lg border-2 border-[#005DAA] rounded-xl experience-card ${className || ''}`}>
                 
     <div className="flex flex-wrap flex-col gap-4 mb-4 md:mb-0">
 

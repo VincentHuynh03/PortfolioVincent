@@ -35,6 +35,9 @@
   .custom-translate-skills {
     transform: translate(30px, -60px);
   }
+  .custom-translate-logo{
+    transform: translate(-0px, -60px);
+  }
 }
 
 
