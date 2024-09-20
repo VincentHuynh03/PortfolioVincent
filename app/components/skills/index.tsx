@@ -40,8 +40,8 @@ const Skills = () => {
         <Section title="Skills" className="section-heading-skills" />
 
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 md:gap-y-14 md:px-30 md:gap-x-40 md:py-5 flex items-center">
-          {skills.map((skill) => (
-        <motion.div initial={{ opacity: 0, ...randomDirection() }} whileInView={{ opacity: 1, x: 0, y: 0 }} transition={{ type: "spring", stiffness: 50, duration: 0.5 }} viewport={{ once: true, amount: 0.3 }}>              
+          {skills.map((skill, index) => (
+        <motion.div key={index} initial={{ opacity: 0, ...randomDirection() }} whileInView={{ opacity: 1, x: 0, y: 0 }} transition={{ type: "spring", stiffness: 50, duration: 0.5 }} viewport={{ once: true, amount: 0.3 }}>              
         <Skills_Card title={skill.title} image={skill.image} className={skill.className} />
         </motion.div>
           ))}
