@@ -28,10 +28,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             );
           })}
         </ul>
-            
-            <div className="block md:hidden text-white text-lg">      
-              <p>Vincent Huynh</p>
-            </div>
+          
           </div>
           <div className="hidden md:flex gap-x-6 text-white text-lg">      
             <p>Vincent Huynh</p>
