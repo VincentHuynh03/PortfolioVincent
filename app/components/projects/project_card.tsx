@@ -1,103 +1,114 @@
-
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 export interface ProjectTitle {
   title: string;
-  librairies?: string;
+  libraries?: string;
   description: string[];
   technologies: string;
   className?: string;
-  link?: string;  
+  link?: string;
   demo?: string;
   logo?: string;
   image?: string;
 }
 
-const Project_card = ({ title, description, logo, image, librairies, technologies, className, link , demo}: ProjectTitle) => {
+const ProjectCard = ({
+  title,
+  description,
+  logo,
+  image,
+  libraries,
+  technologies,
+  className,
+  link,
+  demo,
+}: ProjectTitle) => {
   return (
-    <div className={`m-auto min-h-[49rem] md:w-[30rem] flex flex-col mb-4 drop-shadow-lg border-2 rounded-xl experience-card ${className || ''}`}>
-      
+    <div
+      className={`m-auto max-w-lg w-full flex flex-col mb-4 drop-shadow-lg border rounded-lg experience-card ${
+        className || ""
+      }`}
+      style={{ height: "600px" }}
+    >
       {image && (
-        <div className="relative w-full min-h-[16rem] rounded-lg overflow-hidden">
-          <Image
-            src={image} 
-            alt="Project image"
-            layout="fill" 
-            quality={100}
-            className="object-cover absolute"
-          />
-        </div>
+        <div
+          className="relative w-full h-60 rounded-t-lg overflow-hidden border-b border-gray-300"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: "top center",
+            backgroundSize: "cover",
+          }}
+        ></div>
       )}
-      
-      <div className="flex flex-col flex-grow">
-      {logo && (
-        <div className="flex justify-center mt-4">
-          <Image
-            src={logo} 
-            height={100}
-            width={100}
-            quality={100}
-            alt="Project Logo"
-            className="object-cover custom-translate-logo"
-          />
-        </div>
-      )}
-      
 
-
-        <div className="px-4">
-          <h1 className="font-bold text-center text-xl">{title}</h1>
-          <div className="py-5">
-            <h3>Technologies : {technologies}</h3>
-            {librairies && (
-              <h3>Librairies : {librairies}</h3>
-              )}
-          </div>
-
-          <ul className="list-disc p-4">
-            {description.map((desc, index) => (
-              <li key={index} className="mb-4">{desc}</li>
-            ))}
-          </ul>
-        </div>
-        </div>
-        
-
-      {link && (
-        <div className="flex justify-center mt-4 mb-2 transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-label="GitHub Profile"
-          >
-            <Image 
-              src="/github.svg"  
-              alt="GitHub Icon"
-              width={50}   
-              height={50}  
+      <div className="flex flex-col p-4">
+        {logo && (
+          <div className="flex justify-center mb-4">
+            <Image
+              src={logo}
+              height={50}
+              width={50}
+              quality={100}
+              alt="Project Logo"
+              className="object-cover"
             />
-          </a>
-        </div>
-      )}
-      {demo && (
-        <div className="flex justify-center mt-4 mb-2 transform transition-transform duration-300 ease-in-out hover:scale-110"> 
-          <a 
-            href={demo} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-label="Demo Profile"
-            className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg text-center"
-          >
-           Demo
-          </a>
-        </div>
-      )}
+          </div>
+        )}
 
+        <h1 className="font-semibold text-center text-lg">{title}</h1>
 
+        <div className="mt-2 mb-4">
+          <h3 className="text-sm font-medium">
+            Technologies: <span className="font-normal">{technologies}</span>
+          </h3>
+          {libraries && (
+            <h3 className="text-sm font-medium">
+              Libraries: <span className="font-normal">{libraries}</span>
+            </h3>
+          )}
+        </div>
+
+        <ul className="list-disc pl-5">
+          {description.map((desc, index) => (
+            <li key={index} className="text-sm mb-2">
+              {desc}
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex justify-around mt-4">
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              className="transform transition-transform duration-300 ease-in-out hover:scale-110"
+            >
+              <Image
+                src="/github.svg"
+                alt="GitHub Icon"
+                width={30}
+                height={30}
+              />
+            </a>
+          )}
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Demo Profile"
+              className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg text-center text-sm"
+            >
+              Demo
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Project_card;
+export default ProjectCard;

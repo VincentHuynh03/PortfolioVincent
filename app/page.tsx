@@ -11,8 +11,8 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
     <>
-    <title>Vincent Huynh - Portfolio</title>
-    <div className="bg-gray-800">
+      <title>Vincent Huynh - Portfolio</title>
+      <div className="bg-gray-800">
         <Profile></Profile>
         <Education></Education>
         <Skills></Skills>
@@ -20,8 +20,8 @@ export default function Home() {
         <Projects></Projects>
         <ContactForm></ContactForm>
         <Footer></Footer>
-        </div>
-                {/* 
+      </div>
+      {/* 
 
         <h1>Hello word</h1>
         <p>This is a content to make our page longer</p>
@@ -30,8 +30,6 @@ export default function Home() {
           Lorem Ipsum is simply dummy text ...
         </p>
         */}
-
     </>
   );
 }
-
