@@ -32,16 +32,15 @@ const Projects = () => {
             <Project_card
               title="PokeInfo"
               description={[
-                "Led a team of 3 to develop a Hotel reservation project in C#",
-                "Optimized C# model classes for data consistency and performance.",
-                "Collaborated on front-end design with Figma, implementing it using HTML, CSS, and JavaScript.",
-                " Integrated front-end with back-end for responsiveness and dynamic interactions.",
-                "Implemented secure authentication using ASP.NET Identity.",
+                "Independently built PokeInfo, an interactive Pokemon information app.",
+                "Utilized PokeAPI  to dynamically fetch and display comprehensive Pokemon data, including details, types, and stats.",
+                "Designed a user-friendly interface with Material-UI for an engaging experience.",
               ]}
-              technologies="C#, ASP.NET Core ASP.NET identity"
-              libraries=""
+              technologies="React"
+              libraries="Material-UI"
               link="https://github.com/VincentHuynh03/PokeInfo"
               image="/pokeinfo.png"
+              demo="https://pokeinfodex.vercel.app"
             />
           </motion.div>
 

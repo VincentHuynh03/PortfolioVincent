@@ -77,7 +77,7 @@ const ProjectCard = ({
           ))}
         </ul>
 
-        <div className="flex justify-around mt-4">
+        <div className="flex justify-center gap-10 mt-4">
           {link && (
             <a
               href={link}
@@ -89,8 +89,8 @@ const ProjectCard = ({
               <Image
                 src="/github.svg"
                 alt="GitHub Icon"
-                width={30}
-                height={30}
+                width={35}
+                height={35}
               />
             </a>
           )}
@@ -102,7 +102,7 @@ const ProjectCard = ({
               aria-label="Demo Profile"
               className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg text-center text-sm"
             >
-              Demo
+              Website
             </a>
           )}
         </div>
