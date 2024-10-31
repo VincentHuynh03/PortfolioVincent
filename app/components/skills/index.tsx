@@ -1,14 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Section from "../elements/section";
 import Skills_Card from "./skills_card";
+import { Code } from "lucide-react";
 
 const skillsData = [
   {
     title: "JavaScript",
     image: "/javascript.png",
     className: "text-2xl shadow-yellow-400/40 gradient-box gradient-box-js",
+  },
+  {
+    title: "React",
+    image: "/react.png",
+    className: "text-2xl shadow-orange-500/40 gradient-box gradient-box-react",
   },
   {
     title: "Java",
@@ -83,11 +88,14 @@ const Skills = () => {
   const [skills] = useState(skillsData);
 
   return (
-    <div className="flex w-full text-white text-wrap" id="skills">
-      <div className="items-center sm:items-start container w-full flex-col flex mx-auto px-4 m-4">
-        <Section title="Skills" className="section-heading-skills" />
+    <div className="py-16" id="skills">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-white mb-12 flex items-center justify-center sm:justify-start">
+          <Code className="mr-4 h-10 w-10" />
+          Skills
+        </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10 md:gap-y-14 md:px-30 md:gap-x-40 md:py-5 flex items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
@@ -95,12 +103,9 @@ const Skills = () => {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               transition={{ type: "spring", stiffness: 50, duration: 0.5 }}
               viewport={{ once: true, amount: 0.3 }}
+              className="flex justify-center"
             >
-              <Skills_Card
-                title={skill.title}
-                image={skill.image}
-                className={skill.className}
-              />
+              <Skills_Card {...skill} />
             </motion.div>
           ))}
         </div>

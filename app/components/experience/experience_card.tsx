@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export interface ExperienceTitle {
@@ -7,86 +7,79 @@ export interface ExperienceTitle {
   position: string;
   year: string;
   image: string;
+  description: string;
+  technologies: string[];
+  achievements: string[];
+  website?: string;
   className?: string;
 }
 
 const Experience_card = ({
   title,
-  year,
   position,
+  year,
   image,
+  description,
+  technologies,
+  achievements,
+  website,
   className,
 }: ExperienceTitle) => {
   return (
     <div
-      className={`m-auto min-h-[14rem] md:w-[25rem] flex-1 mb-4 px-4 py-4 drop-shadow-lg border-2 border-[#005DAA] rounded-xl experience-card ${className || ""}`}
+      className={`m-auto min-h-[12rem] max-w-[24rem] flex-1 mb-4 px-3 py-4 drop-shadow-lg border-2 border-[#005DAA] rounded-xl experience-card ${
+        className || ""
+      }`}
     >
-      <div className="flex flex-wrap flex-col gap-4 mb-4 md:mb-0">
-        <div className="m-auto">
+      <div className="flex flex-col items-center gap-3 mb-3">
+        <div className="flex items-center mb-3">
           <Image
             src={image}
-            height={100}
-            width={200}
+            height={120}
+            width={120}
             quality={100}
-            alt="rosemont"
-            className="object-cover"
+            alt="company-logo"
+            className="object-contain mr-2"
           />
         </div>
-
-        <div className="">
-          <h1 className="font-bold text-center text-xl ">{title}</h1>
-          <h2 className="text-center text-lg">{position}</h2>
-          <h2 className="text-center text-lg">{year}</h2>
-          <div className="py-5">
-            <p>
-              <span className="font-bold">Technologies:</span> Python(Flask),
-              HTML, CSS, JS
-            </p>
-            <p>
-              <span className="font-bold">Librairies:</span> Bootstrap,
-              ApexCharts , GridJS
-            </p>
-          </div>
-
-          <ul className="list-disc p-4">
-            <li>
-              <span className="font-bold">
-                Developed a web application independently
-              </span>{" "}
-              to efficiently read, process, and display financial public reports
-              from hospitals in Quebec.
-            </li>
-            <li>
-              <span className="font-bold">Designed and implemented</span>{" "}
-              interactive data visualization features, enabling users to explore
-              hospital financial data through dynamic tables and visual
-              graphics, with advanced filtering options for a customized
-              experience.
-            </li>
-
-            <li>
-              <span className="font-bold">
-                Converted large and complex CSV files
-              </span>{" "}
-              from public hospital reports into JSON format, improving data
-              management and application performance.
-            </li>
-          </ul>
-
-          <span className="font-bold">
-            Website:<br></br>
-          </span>
-          <a
-            target="_blank"
-            href="https://visionhs.ca/"
-            rel="noopener noreferrer"
-            className="underline cursor-pointer text-blue-400 text-xl"
-          >
-            VisionHS
-          </a>
+        <div>
+          <h1 className="font-bold text-center text-lg text-white">{title}</h1>
+          <h2 className="text-center text-md text-blue-400">{position}</h2>
+          <h3 className="text-center text-md text-gray-400">{year}</h3>
         </div>
+        <p className="text-gray-300 mb-3 text-center text-sm">{description}</p>
+
+        <div className="flex flex-wrap gap-1 mb-3">
+          {technologies.map((tech, techIndex) => (
+            <span
+              key={techIndex}
+              className="bg-blue-600 text-white px-1 py-0.5 rounded text-xs"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <ul className="list-disc list-inside text-gray-300 space-y-1 mb-3 text-base">
+          {achievements.map((achievement, index) => (
+            <li key={index}>{achievement}</li>
+          ))}
+        </ul>
+
+        {website && (
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm"
+          >
+            Visit Website
+            <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        )}
       </div>
     </div>
   );
 };
+
 export default Experience_card;

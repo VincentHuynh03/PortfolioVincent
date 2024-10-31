@@ -1,68 +1,59 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import Button from "./button";
 import { motion } from "framer-motion";
-import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
+  const [activeSection, setActiveSection] = useState("");
+  const navSections = [
+    "Education",
+    "Skills",
+    "Experience",
+    "Projects",
+    "Contacts",
+  ];
+
   return (
-    <div className="w-full h-20 bg-gray-800 top-0">
-      <div className="container mx-auto px-4 h-full">
-        <div className="flex justify-between gap-x-6 items-center h-full">
-          <div className="flex-1 flex justify-center">
-            <ul className="hidden md:flex gap-x-2 text-white">
-              {[
-                "Education",
-                "Skills",
-                "Experience",
-                "Projects",
-                "Contacts",
-              ].map((item, index) => {
-                const colors = [
-                  "bg-blue-400",
-                  "bg-blue-500",
-                  "bg-blue-600",
-                  "bg-blue-700",
-                  "bg-blue-800",
-                ];
-                return (
-                  <motion.li
-                    key={index}
-                    whileHover={{ scale: 1.1 }}
-                    className={`hover:underline px-6 py-3 font-semibold text-sm ${colors[index]} rounded-full shadow-xl border-blue-400`}
-                  >
-                    <Link href={`#${item.toLowerCase()}`}>
-                      <p>{item}</p>
-                    </Link>
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </div>
-          <div className="hidden md:flex gap-x-6 text-white text-lg">
-            <p>Vincent Huynh</p>
-          </div>
-          <button
-            type="button"
-            className="inline-flex items-center md:hidden"
-            onClick={toggle}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#fff"
-                d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
-              />
-            </svg>
-          </button>
+    <div className="w-full h-20 bg-gray-800 top-0 text-white relative">
+      <header className="p-6 flex justify-center items-center">
+        <div className="absolute left-4 lg:left-12 top-6">
+          <h1 className="text-2xl font-bold">Vincent Huynh</h1>
         </div>
-      </div>
+        <nav className="flex-1 flex justify-center">
+          <ul className="hidden md:flex gap-x-2 text-white">
+            {navSections.map((item) => (
+              <motion.li
+                key={item}
+                whileHover={{ scale: 1.1 }}
+                className={`px-3 py-2 rounded-md transition-colors ${
+                  activeSection.toLowerCase() === item.toLowerCase()
+                    ? "bg-blue-600"
+                    : "hover:bg-gray-700"
+                }`}
+                onClick={() => setActiveSection(item.toLowerCase())}
+              >
+                <Link href={`#${item.toLowerCase()}`}>
+                  <p>{item}</p>
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+      <button
+        type="button"
+        className="absolute top-4 right-4 md:hidden"
+        onClick={toggle}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+        >
+          <path fill="#fff" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
+        </svg>
+      </button>
     </div>
   );
 };
