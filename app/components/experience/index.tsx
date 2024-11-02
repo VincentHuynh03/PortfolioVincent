@@ -41,11 +41,6 @@ const Experience = () => {
     },
   ];
 
-  const leftslide = {
-    hidden: { opacity: 0, x: window.innerWidth < 768 ? -100 : -450 }, // Smaller x for mobile
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
     <section className="py-16" id="experience">
       <div className="container mx-auto px-4">
