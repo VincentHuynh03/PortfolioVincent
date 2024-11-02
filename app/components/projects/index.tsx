@@ -4,6 +4,7 @@ import React from "react";
 import Section from "../elements/section";
 import Project_card from "./project_card";
 import { motion } from "framer-motion";
+import { Presentation } from "lucide-react";
 
 const cardVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -16,12 +17,12 @@ const cardVariants = {
 
 const Projects = () => {
   return (
-    <div
-      className="h-full flex w-full text-white text-wrap bg-gray-800"
-      id="projects"
-    >
+    <div className="h-full flex w-full text-white text-wrap" id="projects">
       <div className="items-center sm:items-start container w-full flex-col flex mx-auto px-4  m-4 h-full">
-        <Section title="Projects" className="section-heading-projects" />
+        <h2 className="text-4xl font-bold text-white mb-12 flex items-center">
+          <Presentation className="mr-4 h-10 w-10" />
+          Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-10 md:gap-y-10 md:px-30 md:gap-x-20 md:py-5 m-auto flex items-center">
           <motion.div
             variants={cardVariants}
@@ -78,12 +79,11 @@ const Projects = () => {
                 " Collaborated in a team of 4 to develop an Android Carpool app with its own API, handling both front-end and back-end tasks.",
                 "Led the implementation of OAuth-based authentication and token management, securing user data and ensuring API access control.",
                 "Designed and implemented the Reservation system, optimizing database interactions and building features for booking, updating, and canceling reservations.",
-                "Used Miro to plan the project’s architecture and worked on improving code performance, integrating new features, and enhancing the user experience.",
               ]}
               technologies="Kotlin, Spring Boot"
               libraries=""
               link="https://github.com/VincentHuynh03/Android-Carpool-App"
-              logo="/AllezHop.png"
+              image="/carpool.jpg"
             />
           </motion.div>
 
