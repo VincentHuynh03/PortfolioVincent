@@ -5,6 +5,15 @@ import Experience_card from "./experience_card";
 import { motion } from "framer-motion";
 import { BriefcaseBusiness } from "lucide-react";
 
+const cardVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring", stiffness: 50, duration: 0.5 },
+  },
+};
+
 const Experience = () => {
   const experiences = [
     {
@@ -33,7 +42,7 @@ const Experience = () => {
   ];
 
   const leftslide = {
-    hidden: { opacity: 0, x: -450 },
+    hidden: { opacity: 0, x: window.innerWidth < 768 ? -100 : -450 }, // Smaller x for mobile
     visible: { opacity: 1, x: 0 },
   };
 
@@ -48,14 +57,10 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
-              variants={leftslide}
+              variants={cardVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`mb-12 flex flex-col items-center ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
             >
               <Experience_card {...experience} />
             </motion.div>
